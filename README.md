@@ -5,31 +5,31 @@ Classify 5005 types of whales by images of their flukes (tails). There are 5005 
 
 # FILE DESCRIPTIONS
 
-  # EdgeDetection.ipynb
-  Takes in a single raw image and creates an image which only has the edges/contours of the original image. Basically highlights the shape and pattern of the tail of the whale.
+**EdgeDetection.ipynb**
+Takes in a single raw image and creates an image which only has the edges/contours of the original image. Basically highlights the shape and pattern of the tail of the whale.
 
-  # KGDataAugmentation.ipynb
-  Created to tackle data imbalance, especially for classes with only 1 image. Code in this file applies 12 augmentations from Albumentations library to every single image in every class (except from the new_whale class since it has 10,000 images already). So it applies 12 augmentations to about 15,000 images resulting in a total of 180,000 images generated including the initial 15,000.
+**KGDataAugmentation.ipynb**
+Created to tackle data imbalance, especially for classes with only 1 image. Code in this file applies 12 augmentations from Albumentations library to every single image in every class (except from the new_whale class since it has 10,000 images already). So it applies 12 augmentations to about 15,000 images resulting in a total of 180,000 images generated including the initial 15,000.
 
-  # KGEdgeImages.ipynb
-  Created to apply edge detection to every single image (total 220k+). Uses 25 threads where each thread performs edge detection on approximately 8800 images.
+**KGEdgeImages.ipynb**
+Created to apply edge detection to every single image (total 220k+). Uses 25 threads where each thread performs edge detection on approximately 8800 images.
 
-  # KGEnsemble14.ipynb
-  Created to ensemble 14 neural networks and output a prediction for ~8000 test images. This approach was abandoned due to time limitations however parts of code were used to ensemble 3 networks.
+**KGEnsemble14.ipynb**
+Created to ensemble 14 neural networks and output a prediction for ~8000 test images. This approach was abandoned due to time limitations however parts of code were used to ensemble 3 networks.
 
-  # KGWClassExploration.ipynb
-  Counts and shows number of images per class to help with detecting data imbalance.
+**KGWClassExploration.ipynb**
+Counts and shows number of images per class to help with detecting data imbalance.
 
-  # KGWImageAmplifier.ipynb
-  Applies multiple augmentations to image using PIL library.
+**KGWImageAmplifier.ipynb**
+Applies multiple augmentations to image using PIL library.
 
-  # KGWhaleClassActions.ipynb
-  Further sorts already-sorted classes into folders by number of images per class within a certain range.
+**KGWhaleClassActions.ipynb**
+Further sorts already-sorted classes into folders by number of images per class within a certain range.
 
-  # KGWhaleFileSorting.ipynb
-  Sorts raw image data into class folders by using the csv file provided in the competition.
+**KGWhaleFileSorting.ipynb**
+Sorts raw image data into class folders by using the csv file provided in the competition.
 
-  # KaggleWhaleTrain.ipynb
-  Main file. Trains neural network and writes Top 5 predicted classes of each image in test set to csv file for submission. 
+**KaggleWhaleTrain.ipynb**
+Main file. Trains neural network and writes Top 5 predicted classes of each image in test set to csv file for submission. 
 
 
